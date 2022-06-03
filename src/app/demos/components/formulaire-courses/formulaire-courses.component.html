@@ -1,0 +1,29 @@
+<form [formGroup]="course" (ngSubmit)="onSubmit()">
+  <label>
+    Title:
+    <input type="text" formControlName="titre">
+  </label>
+  <label>
+    Date:
+    <input type="date" formControlName="date">
+  </label>
+  <div formArrayName="articles">
+    <div *ngFor="let article of articles.controls; let i = index">
+      <label i18n="{i18n_metadata}">
+        Nom de l'article:
+        <input type="text" formControlName="nom">
+      </label>
+      <label>
+        Prix de l'article:
+        <input type="number" formControlName="prix">
+      </label>
+      <label>
+        Unité de l'article:
+        <input type="text" formControlName="unite">
+      </label>
+      <button type="button" (click)="removeArticle(i)">Supprimer</button>
+    </div>
+    <button type="button" (click)="addArticle()">Ajouter</button>
+  </div>
+  <input type="submit" value="Terminer" >
+</form>

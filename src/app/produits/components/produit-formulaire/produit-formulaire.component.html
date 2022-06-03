@@ -1,0 +1,56 @@
+<div class="main-container">
+  <mat-card class="main-card">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+  
+      <mat-form-field>
+        <mat-label>Titre:</mat-label>
+        <input matInput placeholder="Exemple: Interstellar" formControlName="titre">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>URL de l'image:</mat-label>
+        <input matInput 
+          placeholder="Exemple: Interstellar" 
+          formControlName="imgUrl">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Description:</mat-label>
+        <textarea 
+          matInput  
+          formControlName="description"></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Date de sortie:</mat-label>
+        <input 
+          type="date" 
+          matInput 
+          formControlName="dateSortie">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Realisateur:</mat-label>
+        <input 
+          matInput 
+          placeholder="Exemple: Christofer Nolan" 
+          formControlName="realisateur">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Catégorie</mat-label>
+        <mat-select formControlName="categorie">
+          <mat-option 
+            *ngFor="let categorie of categories"
+            [value]="categorie"
+            >{{categorie}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button type="submit">
+        Save
+      </button>
+    </form>
+  </mat-card>
+  
+</div>

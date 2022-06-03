@@ -1,0 +1,19 @@
+<mat-card class="exemple-card">
+  <mat-card-header>
+    <mat-card-title>Nom: {{utilisateur.nom}}</mat-card-title>
+  </mat-card-header>
+  <div>
+    <span></span>
+    <span>Prenom: {{utilisateur.prenom}}</span>
+    <span>Email: {{utilisateur.email}}</span>
+    <span>Entreprise: {{utilisateur.entreprise}}</span>
+    <span *ngFor="let telephone of utilisateur.telephones; let i = index">
+      Telephone {{i}}: {{telephone}}
+    </span>
+    
+  </div>
+  <mat-card-actions>
+    <button mat-button (click)="onEditClick()">Editer</button>
+  </mat-card-actions>
+    
+</mat-card>

@@ -1,0 +1,13 @@
+.container {
+  margin: 10px;
+  background-color: aliceblue;
+}
+
+.content-container {
+  display: flex;
+  padding: 10px;
+}
+
+.content-right {
+  padding-left: 50px;
+}

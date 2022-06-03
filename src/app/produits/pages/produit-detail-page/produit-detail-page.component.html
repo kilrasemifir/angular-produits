@@ -1,0 +1,22 @@
+<mat-card class="container">
+  <mat-card-header>
+    Titre: {{produit.titre}}
+  </mat-card-header>
+  <mat-card-content>
+    <div class="content-container">
+      <div>
+        <img [src]="produit.imgUrl">
+        <p>id: {{produit.id}}</p>
+
+      </div>
+      <div class="content-right">
+        <p><b>Categorie:</b> {{produit.categorie}}</p>
+        <p><b>Réalisateur:</b> {{produit.description}}</p>
+        <p><b>Acteurs:</b> {{produit.acteurs}}</p>
+        <p><b>Date de sortie:</b> {{produit.dateSortie | date:"dd/MM/yyyy"}}</p>
+        <p><b>Description:</b> {{produit.description}}</p>
+        
+      </div>
+    </div>  
+  </mat-card-content>
+</mat-card>

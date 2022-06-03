@@ -1,0 +1,13 @@
+div {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.exemple-card {
+  max-width: 30vw;
+  margin: 10px;
+  padding: 10px;
+
+  background-color: antiquewhite;
+}

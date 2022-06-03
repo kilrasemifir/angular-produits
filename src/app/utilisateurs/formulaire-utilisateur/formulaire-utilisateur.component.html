@@ -1,0 +1,28 @@
+<form [formGroup]="utilisateurForm" (ngSubmit)="onSubmit()">
+  <p *ngFor="let message of errorMessages">{{message}}</p>
+  <label>
+    Nom:
+    <input type="text" formControlName="nom">
+  </label>
+  <label>
+    Prenom:
+    <input type="text" formControlName="prenom">
+  </label>
+  <label>
+    Email:
+    <input type="email" formControlName="email">
+  </label>
+  <label>
+    Entreprise:
+    <input type="text" formControlName="entreprise">
+  </label>
+  <div formArrayName="telephones">
+    <div *ngFor="let telephone of telephones.controls; let i = index">
+      Tel {{i}}
+      <input type="text" [formControlName]="i">
+      <button mat-button type="button" (click)="supprimerTelephone(i)">Supprimer</button>
+    </div>
+    <button mat-button color="primary" type="button" (click)="ajouterTelephone()">Ajouter un telephone</button>
+  </div>
+  <button mat-button type="submit">Valider</button>
+</form>

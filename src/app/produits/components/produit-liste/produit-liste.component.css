@@ -1,0 +1,14 @@
+.container {
+  margin: 10px;
+  background-color: azure;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}

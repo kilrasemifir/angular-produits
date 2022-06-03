@@ -1,0 +1,45 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "titre": "Ligne verte",
+      "description": "Film triste",
+      "categorie": "films",
+      "imgUrl": "https://citation-celebre.leparisien.fr/images/film/457.jpg"
+    },
+    {
+      "id": 2,
+      "titre": "Interstellar",
+      "description": "Film qui parle d'espace et du temps.",
+      "categorie": "films",
+      "imgUrl": "https://m.media-amazon.com/images/I/A1JVqNMI7UL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 3,
+      "titre": "Inception",
+      "imgUrl": "https://m.media-amazon.com/images/I/912AErFSBHL._AC_SY550_.jpg",
+      "description": "Film pour les parents",
+      "dateSortie": "2022-06-03",
+      "realisateur": "jean",
+      "categorie": "films"
+    },
+    {
+      "titre": "Le jeu de la dame",
+      "imgUrl": "https://fr.web.img4.acsta.net/pictures/20/09/25/09/06/0492330.jpg",
+      "description": "Le Jeu de la dame (The Queen's Gambit) est une mini-série américaine en sept parties d'environ 56 minutes chacune, créée par Scott Frank et Allan Scott, adaptée du roman éponyme de Walter Tevis publié en 1983, et mise en ligne le 23 octobre 2020 sur Netflix.",
+      "dateSortie": "2020-10-23",
+      "realisateur": "Scott Frank",
+      "categorie": "mini-serie",
+      "id": 7
+    },
+    {
+      "titre": "Rambo",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/John_Rambo.jpg/280px-John_Rambo.jpg",
+      "description": "Un homme calme.",
+      "dateSortie": "1972-06-02",
+      "realisateur": "John Rambo",
+      "categorie": "films",
+      "id": 8
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<mat-card class="container">
+  <mat-card-header class="title">
+    <h2>{{titre}}</h2>
+  </mat-card-header>
+  <div class="content">
+    <button mat-raised-button (click)="decalageGauche()"><</button>
+    <app-produit-card 
+      *ngFor="let produit of produitsListe" 
+      [produit]="produit"
+      (delete)="onDelete($event)"></app-produit-card>
+    <button mat-raised-button (click)="decalageDroite()">></button>
+  </div>
+</mat-card>

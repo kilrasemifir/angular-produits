@@ -1,0 +1,5 @@
+<utilisateurs-utilisateur-carte 
+  *ngFor="let utilisateur of utilisateurs" 
+  [utilisateur]="utilisateur"
+  (edite)="onEdit($event)">
+</utilisateurs-utilisateur-carte>

@@ -1,0 +1,4 @@
+<div *ngFor="let fruit of fruits; let i =  index"> 
+  <p>{{i}} {{fruit}}</p>
+  <button (click)="onClick(i, fruit)">click me</button>
+</div>

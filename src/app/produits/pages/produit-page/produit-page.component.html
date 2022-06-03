@@ -1,0 +1,11 @@
+<div class="container">
+  <button mat-raised-button [routerLink]="['/produits/formulaire']">
+    Nouveau
+  </button>
+  <app-produit-liste 
+    *ngFor="let produitCategorie of listes"
+    [produits]="produitCategorie.produits"
+    [titre]="produitCategorie.titre"
+    (delete)="onDelete($event)">
+  </app-produit-liste>
+</div>

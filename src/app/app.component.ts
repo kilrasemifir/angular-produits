@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mon-premier-projet';
+
+  fSize = 1;
+  monStyle = {
+    "background-color": "green",
+    "font-size": `1px`
+  }
+  redBlue = true;
+  interval = setInterval(()=>{
+    this.redBlue= !this.redBlue;
+  }, 1000)
+  constructor() {
+  }
 }

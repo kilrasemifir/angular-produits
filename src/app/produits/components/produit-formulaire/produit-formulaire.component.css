@@ -1,0 +1,17 @@
+.main-card {
+  margin: 10px;
+  background-color: aliceblue;
+  max-width: 750px;
+  min-width: 500px;
+
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
